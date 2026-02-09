@@ -1,0 +1,17 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon -->
+  <g transform="translate(20,20)">
+    <rect x="0" y="0" width="40" height="40" rx="6" fill="#38BDF8"/>
+    <polygon points="15,10 30,20 15,30" fill="#0F172A"/>
+  </g>
+
+  <!-- Brand Text -->
+  <text x="80" y="50" font-family="Segoe UI, Inter, sans-serif" font-size="32" font-weight="700">
+    <tspan fill="#0F172A">Veu</tspan><tspan fill="#38BDF8">demy</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="82" y="68" font-family="Segoe UI, Inter, sans-serif" font-size="12" fill="#475569">
+    Learn • Create • Publish
+  </text>
+</svg>
