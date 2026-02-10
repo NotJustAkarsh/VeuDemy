@@ -14,7 +14,7 @@ const SearchBar = ({data}) => {
   return (
     <form
       onSubmit={onSearchHandler}
-      className="md:min-w-xl max-w-xl md:h-14 h-12 bg-white flex items-center border pt-1 pb-1 rounded border-gray-500/20 mt-8"
+      className="md:min-w-xl w-full max-w-xl md:h-14 h-12 bg-white flex items-center border pt-1 pb-1 rounded border-gray-500/20"
     >
       <img
         src={assets.search_icon}
@@ -30,7 +30,7 @@ const SearchBar = ({data}) => {
       />
       <button
         type="submit"
-        className="bg-blue-600 rounded text-white md:px-10 px-7 md:py-3 py-2 mx-1"
+        className="bg-blue-600 rounded text-white md:px-10 px-7 md:py-3 py-2 mx-1 active:scale-95"
       >
         Search
       </button>

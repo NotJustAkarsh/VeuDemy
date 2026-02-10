@@ -17,7 +17,7 @@ const Navbar = () => {
     <div
       className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 ${isCourseListPage ? "bg-white" : "bg-cyan-100/70"}`}
     >
-      <div onClick={()=>navigate('/')} className="cursor-pointer font-bold text-2xl sm:text-3xl lg:text-4xl">
+      <div onClick={()=>navigate('/')} className="cursor-pointer font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
         <span className="text-blue-600">Veu</span>
         <span>Demy</span>
       </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex items-center gap-5">
           {user && (
             <>
-              <button onClick={()=>{navigate('/educator')}}>{isEducator ? "Educator Dashboard" : "Become Educator"}</button>
+              <button onClick={()=>{navigate('/educator')}}>{isEducator ? "Educator Dashboard" : "Become Educator"}</button> |
               <Link to="/my-enrollments">My Enrollments</Link>
             </>
           )}
@@ -39,7 +39,7 @@ const Navbar = () => {
         ) : (
           <button
             onClick={() => openSignIn()}
-            className="bg-blue-600 text-white px-5 py-2 rounded-full"
+            className="bg-blue-600 text-white px-5 py-2 rounded-full cursor-pointer active:scale-95"
           >
             Create Account
           </button>
@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="flex items-center gap-1 sm:gap-2 max-sm:text-xs">
           {user && (
             <>
-              <button onClick={()=>{navigate('/educator')}}>{isEducator ? "Educator Dashboard" : "Become Educator"}</button>
+              <button onClick={()=>{navigate('/educator')}}>{isEducator ? "Educator Dashboard" : "Become Educator"}</button> |
               <Link to="/my-enrollments">My Enrollments</Link>
             </>
           )}

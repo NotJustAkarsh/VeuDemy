@@ -40,14 +40,14 @@ const Footer = () => {
           <h2 className="text-white mb-6 ">Subscribe to our Newsletter</h2>
           <p className="text-white/80 mb-5">The latest news, articles, and resources, sent to your inbox weekly.</p>
           <div className="flex items-center gap-2">
-            <input className="py-2 px-3 border-gray-200 border rounded text-white/80 outline-none " type="text" placeholder="Enter your email" />
-            <button className="bg-blue-500 text-white py-2 px-3 rounded">Subscribe</button>
+            <input className="py-2 px-3 border-gray-500/30 border rounded text-white/80 outline-none " type="text" placeholder="Enter your email" />
+            <button className="bg-blue-500 text-white py-2 px-3 rounded active:scale-95 cursor-pointer">Subscribe</button>
           </div>
           
         </div>
       </div>
       <p className="text-center text-xs text-white/60 py-4">
-        Copyright 2024 © Edemy. All Right Reserved.
+        Copyright 2026 © Veudemy. All Right Reserved.
       </p>
     </footer>
   );

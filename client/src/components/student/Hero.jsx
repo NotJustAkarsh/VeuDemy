@@ -14,7 +14,7 @@ const Hero = () => {
           alt="sketch"
         />
       </h1>
-      <p className="md:block hidden lg:text-2xl m-4 text-gray-500 max-w-2xl mx-auto">
+      <p className="md:block hidden lg:text-2xl m-4 text-gray-500 max-w-2xl mx-auto mb-8">
         We bring together world-class instructors, interactive content, and a
         supportive community to help you achieve your personal and professional
         goals.

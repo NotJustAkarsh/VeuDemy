@@ -1,9 +1,11 @@
-import React from "react";
+import Footer from "../../components/student/Footer";
+import AllCourses from "../../components/student/AllCourses";
 
 const CoursesList = () => {
   return (
-    <div>
-      <h1>CoursesList</h1>
+    <div className='flex flex-col items-center space-y-7 text-center'>
+      <AllCourses />
+      <Footer />
     </div>
   );
 };

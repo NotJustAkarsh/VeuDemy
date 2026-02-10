@@ -18,6 +18,8 @@ export const AppContextRovider = (props) => {
     setAllCourses(dummyCourses);
   };
 
+  // Told to fetch all courses
+
   useEffect(() => {
     fetchAllCourses();
   }, []);
@@ -34,6 +36,8 @@ export const AppContextRovider = (props) => {
     });
     return totalRating / course.courseRatings.length;
   };
+
+  //Accumulating all the needed things to pass to other components of the app
 
   const value = {
     currency,
