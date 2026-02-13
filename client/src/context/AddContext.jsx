@@ -12,6 +12,7 @@ export const AppContextRovider = (props) => {
 
   const [allCourses, setAllCourses] = useState([]);
   const [isEducator, setisEducator] = useState([true]);
+  const [enrolledCourses, setEnrolledCourses] = useState([])
 
   //Fetch all Courses
 
@@ -23,6 +24,7 @@ export const AppContextRovider = (props) => {
 
   useEffect(() => {
     fetchAllCourses();
+    fetchUserEnrolledCourses();
   }, []);
 
   //Function to calculate average rating of course
@@ -57,6 +59,12 @@ export const AppContextRovider = (props) => {
     });
     return totalLectures;
   }
+
+  // Fetch User Enrolled courses
+
+  const fetchUserEnrolledCourses = async ()=>{
+    setEnrolledCourses(dummyCourses)
+  }
   
 
   const calculateCourseDuration = (course) => {
@@ -78,7 +86,10 @@ export const AppContextRovider = (props) => {
     setisEducator,
     calculateNoOfChapters,
     calculateCourseDuration,
-    calculateChapterTime
+    calculateChapterTime,
+    fetchUserEnrolledCourses,
+    enrolledCourses
+
   };
 
   return (
